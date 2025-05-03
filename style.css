@@ -10,6 +10,8 @@ body {
     color: white;
 }
 
+/* SECTION HERO */
+
 .hero {
     height: 100vh;
     background: radial-gradient(#1a1a1a, #000);
@@ -23,6 +25,7 @@ body {
 .logo {
     width: 120px;
     margin-bottom: 1.5rem;
+    filter: invert(1);
 }
 
 .content h1 {
@@ -48,4 +51,49 @@ body {
 
 .btn:hover {
     background-color: #b00;
+}
+
+
+/* SECTION GARAGE */
+
+.garage {
+    padding: 4rem 2rem;
+    background-color: #111;
+    text-align: center;
+}
+
+.garage h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.car-card {
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card img {
+    width: 100%;
+    display: block;
+}
+
+.car-card h3 {
+    padding: 1rem;
+    color: #fff;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgb(255, 0, 0, 0.2);
 }
