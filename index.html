@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <title>Audi Virtual Garage</title>
 </head>
 <body>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-down">
         <div class="content">
             <img src="images/audi-logo.svg" alt="Audi Logo" class="logo">
 
@@ -23,29 +26,35 @@
         </div>
     </section>
 
-    <section class="garage" id="garage">
-        <h2>Explore the Garage</h2>
+    <section class="intro" data-aos="fade-up">
+        <h2>Step into the Audi Garage</h2>
+        <p>Welcome to your private digital space, where precision meets power. Explore our finest models and experience innovation at every turn.</p>
+    </section>
+      
+
+    <section class="garage" id="garage" data-aos="fade-up">
+        <h2 data-aos="zoom-in">Explore the Garage</h2>
 
         <div class="car-grid">
-            <div class="car-card" onclick="openModal('rs7')">
+            <div class="car-card" data-aos="flip-left" data-aos-delay="100" onclick="openModal('rs7')">
                 <img src="images/rs7.png" alt="Audi RS7">
 
                 <h3>RS7</h3>
             </div>
 
-            <div class="car-card" id="Q8" onclick="openModal('Q8')">
+            <div class="car-card"  data-aos="flip-left" data-aos-delay="100"id="Q8" onclick="openModal('Q8')">
                 <img src="images/audiQ8etron.png" alt="Audi Q8 e-tron">
             
                 <h3>Q8 e-tron</h3>
             </div>
 
-            <div class="car-card" id="R8" onclick="openModal('R8')">
+            <div class="car-card"  data-aos="flip-left" data-aos-delay="100" id="R8" onclick="openModal('R8')">
                 <img src="images/audi r8-3.png" alt="Audi R8">
             
                 <h3>R8</h3>
             </div>
 
-            <div class="car-card" id="A7" onclick="openModal('A7')">
+            <div class="car-card"  data-aos="flip-left" data-aos-delay="100" id="A7" onclick="openModal('A7')">
                 <img src="images/A7.png" alt="Audi A7">
             
                 <h3>A7</h3>
@@ -110,12 +119,42 @@
     </section>
 
 
+    <section class="features" data-aos="fade-up">
+        <h2>Why Audi?</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Electrified Performance</h3>
+                <p>Feel the rush with powerful e-tron technology and dynamic design.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-road"></i>
+                <h3>Precision Handling</h3>
+                <p>Drive like never before with quattro® all-wheel drive and adaptive tech.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Intelligent Innovation</h3>
+                <p>From AI assistance to cutting-edge infotainment, Audi leads the future.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial" data-aos="zoom-in">
+        <blockquote>"Driving an Audi is not just transportation — it's an experience of power and precision."</blockquote>
+        <p>– Automotive Magazine</p>
+    </section>
+      
+      
+
+
     <footer class="site-footer">
         <div class="footer-logo">
             <img src="images/audi-logo.svg" alt="Audi Logo" />
         </div>
 
-        <p class="footer-text">© 2025 Audi Virtual Garage — Designed by Marisol</p>
+        <p class="footer-text">© 2025 Audi Virtual Garage — Designed by Marinela</p>
 
         <div class="footer-socials">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -141,6 +180,23 @@
                     e.target.style.display = 'none';
                 }
             };
+        </script>
+
+
+        <!-- AOS JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out-quart',
+                once: true
+            });
+        </script>
+
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
 
 </body>

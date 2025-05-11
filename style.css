@@ -54,6 +54,27 @@ body {
 }
 
 
+.intro {
+    background: #121212;
+    color: #ccc;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
 /* SECTION GARAGE */
 
 .garage {
@@ -150,6 +171,54 @@ body {
 }
 
 
+.features {
+    background: #181818;
+    color: #eee;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-item {
+    background: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 280px;
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+
+.testimonial {
+    background: #0f0f0f;
+    color: #eee;
+    padding: 4rem 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
 /* FOOTER */
 
 .site-footer {
@@ -182,3 +251,4 @@ body {
 .footer-socials a:hover {
     color: white;
 }
+
